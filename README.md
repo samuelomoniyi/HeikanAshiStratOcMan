@@ -1,0 +1,2 @@
+# HeikanAshiStratOcMan
+Selenium pyautogui strategy
