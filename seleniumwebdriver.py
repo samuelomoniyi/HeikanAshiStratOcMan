@@ -45,6 +45,8 @@
 # second
 
 
+# webdriver-manager selenium
+
 
 import undetected_chromedriver as uc
 from selenium.webdriver.chrome.service import Service
@@ -58,7 +60,7 @@ options.add_argument("start-maximized")
 
 # Initialize Chrome WebDriver with undetected_chromedriver and webdriver_manager
 # Use the correct ChromeDriver version compatible with your browser
-driver = uc.Chrome(service=Service(ChromeDriverManager(version="127.0.6533.73").install()), options=options)
+driver = uc.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 # Open the specified URL
 driver.get('https://www.quotex.com/en/demo-trade/')
@@ -72,3 +74,6 @@ time.sleep(20)
 
 # Close the browser
 driver.quit()
+
+
+# it shows no module named distuils pip install --upgrade setuptools
